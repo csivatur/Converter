@@ -34,7 +34,7 @@ public class EnglishImpl extends AbstractConvertor {
 	@Override
 	protected String appendDelimiter(final int hundreds) {
 		// TODO Auto-generated method stub
-		if(hundreds>1){
+		if(hundreds>=1){
 			return " and ";
 		}
 		return "";
