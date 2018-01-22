@@ -43,21 +43,24 @@ public class EnglishTest
     
     @Test
     public void testNegativeCases() {
-    	Assume.assumeTrue(type == Type.FAILURE);
-      exception.expect(IllegalArgumentException.class);
-      exception.expectMessage(words);
-      IValues values = ValuesFactory.getValues(Locale.ENGLISH);
-      IConverter converter = ConverterFactory.getConverter(Locale.ENGLISH, values);
-      converter.convert(value);
+        if(type.equals(Type.FAILURE)) {
+            exception.expect(IllegalArgumentException.class);
+            exception.expectMessage(words);
+            IValues values = ValuesFactory.getValues(Locale.ENGLISH);
+            IConverter converter = ConverterFactory.getConverter(Locale.ENGLISH, values);
+            converter.convert(value);
+        }
     }
     
     
     @Test
     public void testPostiveValues() {
-    	Assume.assumeTrue(type == Type.SUCCESS);
-        IValues values = ValuesFactory.getValues(Locale.ENGLISH);
-        IConverter converter = ConverterFactory.getConverter(Locale.ENGLISH, values);
-        assertEquals("Result", words, converter.convert(value));
+        if(type.equals(Type.SUCCESS)) {
+            Assume.assumeTrue(type == Type.SUCCESS);
+            IValues values = ValuesFactory.getValues(Locale.ENGLISH);
+            IConverter converter = ConverterFactory.getConverter(Locale.ENGLISH, values);
+            assertEquals("Result", words, converter.convert(value));
+        }
     }
     
     /**
