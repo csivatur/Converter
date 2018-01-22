@@ -82,7 +82,7 @@ public class EnglishTest
             {Type.SUCCESS,73456, "seventy-three thousand four hundred and fifty-six"},
             {Type.SUCCESS,889922, "eight hundred and eighty-nine thousand nine hundred and twenty-two"},
             {Type.SUCCESS,9912366, "nine million nine hundred and twelve thousand three hundred and sixty-six"},
-            {Type.SUCCESS,88992117, "eighty-eight million nine hundred and ninety-two thousand one hundredseventeen"},
+            {Type.SUCCESS,88992117, "eighty-eight million nine hundred and ninety-two thousand one hundred and seventeen"},
             {Type.SUCCESS,21, "twenty-one"},
             {Type.SUCCESS,71, "seventy-one"},
             {Type.SUCCESS,999999999, "nine hundred and ninety-nine million nine hundred and ninety-nine thousand nine hundred and ninety-nine"},
